@@ -1,3 +1,9 @@
+window.onpageshow = function(event) {
+    if (event.persisted) {
+        window.location.reload();
+    }
+};
+
 function jisuan() {
 	// body...
 	sernum = parseInt(document.getElementById("shebeihao").value);

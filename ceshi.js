@@ -19,3 +19,8 @@ function jisuan() {
 	var temp3 = document.getElementById("jieguo");
 	temp3.innerHTML = a5 + "-" + a4 + "-" + a3 + "-" + a2 + "-" + a1;
 }
+if(window.localStorage){
+ alert('This browser supports localStorage');
+}else{
+ alert('This browser does NOT support localStorage');
+}

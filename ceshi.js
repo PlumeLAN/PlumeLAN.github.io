@@ -24,7 +24,11 @@ function baocun() {
 	// body...
 	usermima = document.getElementById("mima").value; 
 	if (localStorage.pass1 == usermima) {
-		window.location.href="ceshi.html";
+		//window.location.href="ceshi.html";
+		var temp1 = document.getElementById("yemian1");
+		temp1.style.cssText = "display:none";
+		var temp2 = document.getElementById("yemian2");
+		temp2.style.cssText = "display:yes";
 	}
 	else{
 		alert("密码错误");

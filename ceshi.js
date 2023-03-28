@@ -9,7 +9,14 @@ function jisuan() {
 	sss = ss[0] + ss[1] + ss[2];
 	key = (sernum * serid - 1) * 470;
 	key2 = sernum % 100;
-	data = parseInt(sss + key2);
+	if(key2 < 10)
+	{
+		data = parseInt(sss + "0" + key2);
+	}
+	else
+	{
+		data = parseInt(sss + key2);
+	}
 	a1 = ((key ^ data) % 100).toString();
 	a2 = Math.trunc((key ^ data) / 100 % 100).toString();
 	a3 = Math.trunc((key ^ data) / 10000 % 100).toString();
